@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(/Barber_Shop_img//banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    font-family: sans-serif;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 12px 0px;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.banner-btn a:hover {
+    background-color: #97a2a1;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menubtn {
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+/* Features */
+
+.feature {
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.title-text {
+    text-align: center;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.title-text h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.FEATURES {
+    flex-basis: 50%;
+}
+
+.FEATURES-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.FEATURES-img img {
+    width: 70%;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+
+.FEATURES h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+
+.feature-des {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    width: 10%;
+    height: 50%;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid cadetblue;
+}
+
+.feature-text {
+    padding: 0 20px;
+    text-align: initial;
+}
+
+/* service */
+
+.service {
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #efefef;
+}
+
+.service-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.single-service img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay {
+    opacity: 1;
+}
+
+hr {
+    background-color: #efefef;
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.single-service:hover {}
+
+.service-des {
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* Testimonial */
+
+.testimonial {
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.testimonial-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #009688;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.testimonial-col p {
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 3px;
+
+}
+
+.testimonial-col:hover {
+    transform: translateY(-7px);
+}
+
+/* footer */
+
+.footer {
+    padding: 100px 0px 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footer-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 48%;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+}
+
+.footer-img {
+    width: 378px;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Responsive code */
+
+
+@media screen and (max-width:770px) {
+    .banner-text h1 {
+        font-size: 54px;
+    }
+
+    .banner-btn a {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .title-text h1 {
+        font-size: 35px;
+    }
+
+    .FEATURES-img {
+        flex-basis: 100%;
+    }
+
+    .FEATURES-img img {
+        width: 100%;
+
+    }
+
+    .single-service {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin: 5px auto;
+
+    }
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:1360px) {
+    .FEATURES {
+
+        padding-top: 60px;
+        flex-basis: 100%;
+    }
+
+    .FEATURES-img {
+        flex-basis: 100%;
+    }
+
+    .FEATURES-img img {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .banner {
+        width: 380px;
+    }
+    .feature{
+        width: 380px;
+    }
+    .service{
+        width: 380px;
+    }
+    .testimonial{
+        width: 380px;
+    }
+    .footer{
+        width: 380px;
+    }
+}
